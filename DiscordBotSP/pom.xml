@@ -14,8 +14,8 @@
 		<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
   	</repository>
 	<repository>
-		<id>jcenter</id>
-		<url>http://jcenter.bintray.com</url>
+		<id>lolnet-repo</id>
+		<url>http://jenkins.lolnet.co.nz/plugin/repository/everything/</url>
 	</repository>
   </repositories>
   <dependencies>
@@ -25,42 +25,12 @@
 		<version>1.9.4-R0.1-SNAPSHOT</version>
 		<scope>provided</scope>
   	</dependency>
-	<dependency>
-    	<groupId>net.dv8tion</groupId>
-    	<artifactId>JDA</artifactId>
-    	<version>2.0.0_242</version>
-    	<scope>compile</scope>
-    	<exclusions>
-    		<exclusion>
-    			<artifactId>jflac</artifactId>
-    			<groupId>jflac</groupId>
-    		</exclusion>
-    		<exclusion>
-    			<artifactId>jaad</artifactId>
-    			<groupId>net.sourceforge.jaadec</groupId>
-    		</exclusion>
-    		<exclusion>
-    			<artifactId>jna</artifactId>
-    			<groupId>net.java.dev.jna</groupId>
-    		</exclusion>
-    		<exclusion>
-    			<artifactId>tritonus-dsp</artifactId>
-    			<groupId>org.tritonus</groupId>
-    		</exclusion>
-    		<exclusion>
-    			<artifactId>mp3spi</artifactId>
-    			<groupId>com.googlecode.soundlibs</groupId>
-    		</exclusion>
-    		<exclusion>
-    			<artifactId>jlayer</artifactId>
-    			<groupId>com.googlecode.soundlibs</groupId>
-    		</exclusion>
-    		<exclusion>
-    			<artifactId>tritonus-share</artifactId>
-    			<groupId>com.googlecode.soundlibs</groupId>
-    		</exclusion>
-    	</exclusions>
-	</dependency>
+        <dependency>
+            <groupId>net.dv8tion</groupId>
+            <artifactId>JDA</artifactId>
+            <version>2.0.0_DEV_Lolnet</version>
+            <scope>compile</scope>
+        </dependency>
   </dependencies>
   <build>
 	<plugins>
@@ -96,7 +66,7 @@
 					<id>default-jar</id>
 					<phase>clean</phase>
 				</execution>
-			</executions>
+             </executions>
 		</plugin>
 	</plugins>
 	<resources>
